@@ -41,17 +41,50 @@ const sportMeta: Record<string, {
 };
 
 const sportAthletes: Record<string, any[]> = {
-  "ski-jumping": [
-    { slug: "ava-johansson", name: "Ava Johansson", sport: "Ski Jumping", stat: "HS140 PB 232m", image: "/athlete-1.jpg", tier: "Gold", status: 'live' as const, floor: "$142", holders: 380, supply: 500 },
+  'ski-jumping': [
+    {
+      slug: 'ava-johansson',
+      name: 'Ava Johansson',
+      sport: 'Ski Jumping',
+      stat: 'HS140 PB 232m',
+      image: '/hakimi.webp',
+      tier: 'Gold',
+      status: 'live' as const,
+      floor: '$142',
+      holders: 380,
+      supply: 500,
+    },
   ],
   football: [
-    { slug: "leo-nilsson", name: "Leo Nilsson", sport: "Football", stat: "30 goals last season", image: "/athlete-2.jpg", tier: "Elite", status: 'live' as const, floor: "$88", holders: 910, supply: 1200 },
+    {
+      slug: 'leo-nilsson',
+      name: 'Leo Nilsson',
+      sport: 'Football',
+      stat: '30 goals last season',
+      image: '/KROOS.webp',
+      tier: 'Elite',
+      status: 'live' as const,
+      floor: '$88',
+      holders: 910,
+      supply: 1200,
+    },
   ],
   tennis: [
-    { slug: "maya-eriksen", name: "Maya Eriksen", sport: "Tennis", stat: "ITF Junior #8", image: "/athlete-3.jpg", tier: "Rising", status: 'upcoming' as const, floor: "$—", holders: 0, supply: 750 },
+    {
+      slug: 'maya-eriksen',
+      name: 'Maya Eriksen',
+      sport: 'Tennis',
+      stat: 'ITF Junior #8',
+      image: '/Modric.webp',
+      tier: 'Rising',
+      status: 'upcoming' as const,
+      floor: '$—',
+      holders: 0,
+      supply: 750,
+    },
   ],
-  basketball: []
-};
+  basketball: [],
+}
 
 export default function SportPage({ params }: { params: { sport: string }}) {
   const key = params.sport;

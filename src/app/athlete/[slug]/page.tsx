@@ -7,7 +7,7 @@ export default async function AthleteProfile({ params }: { params: Promise<{ slu
     name: formatSlug(slug),
     sport: "Ski Jumping",
     bio: "Rising talent with a record personal best and a growing global fanbase.",
-    image: "/athlete-1.jpg",
+    image: "/Modric.webp",
     stats: ["PB 232m", "Top 10 World Cup", "National Team"]
   };
 
