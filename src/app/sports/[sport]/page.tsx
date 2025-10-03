@@ -86,8 +86,9 @@ const sportAthletes: Record<string, any[]> = {
   basketball: [],
 }
 
-export default function SportPage({ params }: { params: { sport: string }}) {
-  const key = params.sport;
+export default async function SportPage({ params }: { params: Promise<{ sport: string }>}) {
+  const { sport } = await params;
+  const key = sport;
   const meta = sportMeta[key];
   const roster = sportAthletes[key] ?? [];
 
