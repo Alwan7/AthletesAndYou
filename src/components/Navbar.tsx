@@ -24,7 +24,6 @@ export default function Navbar() {
     { href: '/community', label: 'Community' },
     { href: '/advertise', label: 'Advertise' },
     { href: '/about', label: 'About' },
-    { href: '/prep', label: 'Prep' },
   ];
 
   const linkClass = (href: string) => {

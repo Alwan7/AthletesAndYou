@@ -63,7 +63,7 @@ export default function Hero() {
         {/* Fine secondary grid */}
         <div className="absolute inset-0 opacity-[0.17] mix-blend-overlay [background-image:linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:20px_20px]" />
         {/* Animated sweep beam */}
-        <div className="absolute inset-0 [mask-image:linear-gradient(to_right,transparent,black_25%,black_75%,transparent)] before:absolute before:inset-y-0 before:left-0 before:w-1/2 before:bg-gradient-to-r before:from-brand-orange/0 before:via-brand-orange/15 before:to-transparent before:animate-[sweep_11s_linear_infinite]" />
+        {/* <div className="absolute inset-0 [mask-image:linear-gradient(to_right,transparent,black_25%,black_75%,transparent)] before:absolute before:inset-y-0 before:left-0 before:w-1/2 before:bg-gradient-to-r before:from-brand-orange/0 before:via-brand-orange/15 before:to-transparent before:animate-[sweep_11s_linear_infinite]" /> */}
         {/* Subtle noise */}
         <div className="absolute inset-0 opacity-[0.07] mix-blend-soft-light [background-image:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 60 60\'><filter id=\'n\'><feTurbulence baseFrequency=\'0.9\' numOctaves=\'2\' stitchTiles=\'stitch\'/></filter><rect width=\'60\' height=\'60\' filter=\'url(%23n)\' opacity=\'0.35\'/></svg>')] [background-size:300px_300px]" />
       </div>
@@ -171,7 +171,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-surface-800/80 p-3 backdrop-blur shadow-glow">
               <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl relative">
                 <img
-                  src="/hero-mock.jpg"
+                  src="/hero-mock.png"
                   alt="Platform multi-sport preview"
                   className="h-full w-full object-cover opacity-90 transition group-hover:opacity-100"
                   loading="eager"

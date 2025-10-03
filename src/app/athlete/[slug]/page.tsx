@@ -1,8 +1,10 @@
 import Link from "next/link";
 
-export default function AthleteProfile({ params }: { params: { slug: string }}) {
+export default async function AthleteProfile({ params }: { params: Promise<{ slug: string }>}) {
+  const { slug } = await params;
+  const formatSlug = (s: string) => decodeURIComponent(s).split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
   const profile = {
-    name: params.slug.split("-").map(s => s[0].toUpperCase()+s.slice(1)).join(" "),
+    name: formatSlug(slug),
     sport: "Ski Jumping",
     bio: "Rising talent with a record personal best and a growing global fanbase.",
     image: "/athlete-1.jpg",
