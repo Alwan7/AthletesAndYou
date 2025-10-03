@@ -50,7 +50,7 @@ export default function MarketPage() {
     () => [
       {
         symbol: 'AVA',
-        athlete: 'Ava Johansson',
+        athlete: 'Achraf Hakimi',
         price: 49,
         change: 6.3,
         up: true,

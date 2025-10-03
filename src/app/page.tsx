@@ -7,9 +7,9 @@ import AthleteCard from "@/components/AthleteCard";
 
 export default function Page() {
   const athletes = [
-    { slug: "ava-johansson", name: "Ava Johansson", sport: "Ski Jumping", stat: "World Cup PB 22.31", image: "/hakimi.webp", tier: "Gold", status: 'live' as const, floor: "$142", holders: 380, supply: 500 },
-    { slug: "leo-nilsson", name: "Leo Nilsson", sport: "Football", stat: "30 goals last season", image: "/KROOS.webp", tier: "Elite", status: 'live' as const, floor: "$88", holders: 910, supply: 1200 },
-    { slug: "maya-eriksen", name: "Maya Eriksen", sport: "Tennis", stat: "ITF Junior #8", image: "/Modric.webp", tier: "Rising", status: 'upcoming' as const, floor: "$—", holders: 0, supply: 750 },
+    { slug: "ava-johansson", name: "Achraf Hakimi", sport: "Ski Jumping", stat: "World Cup PB 22.31", image: "/hakimi.webp", tier: "Gold", status: 'live' as const, floor: "$142", holders: 380, supply: 500 },
+    { slug: "leo-nilsson", name: "Toni Kroos", sport: "Football", stat: "30 goals last season", image: "/KROOS.webp", tier: "Elite", status: 'live' as const, floor: "$88", holders: 910, supply: 1200 },
+    { slug: "maya-eriksen", name: "Luka Modric", sport: "Tennis", stat: "ITF Junior #8", image: "/Modric.webp", tier: "Rising", status: 'upcoming' as const, floor: "$—", holders: 0, supply: 750 },
   ];
 
   const sports = ["All", ...Array.from(new Set(athletes.map(a => a.sport)))];
